@@ -1,0 +1,1051 @@
+ZONE	VN EVENT	EVENTID	ACTOR	VARIATION	POS	DIALOGUE	NEXT	method	Script	ARG0	ARG1	ARG2	ARG3	ARG4	ARG5	ARG6	ARG7	ARG8	ARG9	X
+																				
+	a_sc1|0 // INITIALIZED DO NOT START  HERE AGAIN	0 // INITIALIZED DO NOT START  HERE AGAIN						x												
+								x	HideUI											
+								x	Transition //(type(1 in,-1 out,0 both), speed(second+), delay(second+), color)	1	1	1	black							
+							a_sc1|1	x												
+			torisex5_8	sc5// clamp fuck	^	sc5// clamp fuck			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+			torisex5_8	sc55// anal	^	sc55// anal														
+			torisex5_8	sc6//steady cowboy	^	sc6//steady cowboy														
+			torisex5_8	sc7//spread pussy on back	^	sc7//spread pussy on back														
+			torisex5_8	sc8//tit squeeze blowjob	^	sc8//tit squeeze blowjob														
+			torisex9_14	sc9//riding on top cumming	^	sc9//riding on top cumming														
+			torisex9_14	sc10//ass wiggle 1	^	sc10//ass wiggle 1														
+			torisex9_14	sc11//ass wiggle 2	^	sc11//ass wiggle 2														
+			torisex9_14	sc12//spread legs with heart	^	sc12//spread legs with heart														
+			torisex9_14	sc13//grab cheeks	^	sc13//grab cheeks														
+			torisex9_14	sc14//legs spread smirking	^	sc14//legs spread smirking														
+			torisex15_18	sc15//pink butthole	^	sc15//pink butthole														
+			torisex15_18	sc16//pink butthole look over	^	sc16//pink butthole look over														
+			torisex15_18	sc17// Spread Leg Hover	^	sc17// Spread Leg Hover														
+			torisex15_18	sc18// BJ end	^	sc18// BJ end														
+			torisex15_18	sc18_a// Bj End Facial	^	sc18_a// Bj End Facial														
+			torisex19_22	sc19// Butt dildo	^	sc19// Butt dildo														
+			torisex19_22	sc20// Choke her	^	sc20// Choke her														
+			torisex19_22	sc21// bj start (breast squeeze)	^	sc21// bj start (breast squeeze)														
+			torisex19_22	sc22// piecing add	^	sc22// piecing add														
+			exit		^															
+	a_sc1|1	1						x												
+								x												
+								x												
+								x												
+								x												
+			tori	talkhappy	<	Oh, hello!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					>	* Wow, check out those knockers...														
+			tori	talklaugh	<	I'm so glad you decided to stop by.														
+					<	* She greets you with a warm smile.														
+			tori	talkhappy	<	Well, this is my humble little house.														
+					<	It's not much, but I hope you find it comfortable.														
+					>	* This lady seems to be some kind of...														
+					>	* Sexy fluffy goat creature.														
+			tori	talkshocked	<	Oh, do you smell that?														  
+			tori	talkhappy	<	Surprise!														
+					<	It is a butterscotch-cinnamon pie.														
+					>	* Is this a dream come true? Hot goat mom making me a pie?!														
+					<	I thought we might celebrate your arrival.														
+					<	I want you to have a nice time living here.														
+			tori	talksly	<	Don't worry, I'll hold off on snail pie for tonight.														
+			tori	talkhappy	<	Here, I have another surprise for you.														
+					<	* She gently grabs your hand and leads you down the hallway...														
+							END	x	GoToRoom	rmHallway										
+																				
+	a_sc1|2	2																		
+									HideUI											
+			tori	talkhappy	<	This is it...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	A room of your very own.														
+					<	I hope you like it!														
+								x	Choice // ( Label, Event, , , , , , , , )	I love it!	a_sc1|2.1									
+								x	Choice // ( Label, Event, , , , , , , , )	Lady I barely#know you.	a_sc1|2.2									
+								x	Choice // ( Label, Event, , , , , , , , )	I'm living#here now?	a_sc1|2.3									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|2.1	2.1	tori	talkhappy	<	I'm so happy that -	a_sc1|2.4		Points	25										
+																				
+	a_sc1|2.2	2.2	tori	talkshocked	<	...I know, b-but...	a_sc1|2.4		Points	-10										
+																				
+	a_sc1|2.3	2.3	tori	talkhappy	<	Of course! I want you to-	a_sc1|2.4		Points	5										
+																				
+	a_sc1|2.4	2.4	tori	talkshocked	<	*sniff* Do you smell something burning...?														
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	fx	fx3	5								
+			tori	talkworry	<	UH OH! Um, please make yourself at home!														
+			exit			exit														
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-1.5										
+																				
+			tori	talkhappy	<	* Tori zips back into the room.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+					<	Also!														
+			tori	talkangry	<	Stay out of my room and my basement!														
+					<	I mean it.														
+			tori	talkhappy	<	Teehee! 														
+					<	Gotta check up on that pie.														
+			exit		<	* Hmm that was strange.														
+					>	* Guess it's time to look around!														
+			exit			exit														
+																				
+							a_sc1|end													
+																				
+	a_sc1|pie.0	pie.0						x	HideUI											
+																				
+	a_sc1|pie.1	pie.1	pie	pieidle	^	* You peer over the counter and notice a pie...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+	a_sc1|pie.choices	pie.choices						x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Fuck	a_sc1|pie.fuck.inspected	pie.inspected	1							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Fuck	a_sc1|pie.fuck	pie.inspected	0							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Use Condom	a_sc1|pie.fuck.condom	got.condom	1							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Take a#Small Bite	a_sc1|pie.eat									
+								x												
+								x												
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Inspect	a_sc1|pie.inspect									
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Leave	a_sc1|pie.end									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|pie.fuck	pie.fuck	pie	pieidle	^	* Throwing caution to the wind, you attempt to fuck the Bscotch pie.														
+					^	* You gingerly flop your erect pie-loving cock between the flakey folds of its crust.														
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	fx	ouch									
+					^	* YEOWCH *														
+																				
+					^	* You burn the shit out of your dick.														
+					^	* That fucking hurts but not as much as your pride, you failed pie fucker.														
+					^	* In your desperation to place the pie back...														
+					^	* and distance  yourself from this horific chapter in your life...														
+					^	* ...you accidentally drop the pie on the floor.														
+					^	* You slink away from the scene of the crime.			Points	-10										
+									Events	pie.floor	1									
+							a_sc1|end													
+																				
+	a_sc1|pie.fuck.inspected	pie.fuck.inspected	pie	pieidle	^	* Realizing how hot the pie is, you think of a way to fuck the pie.														
+					^	* ...while not burning your dick of course.														
+								x	Choice // ( Label, Event, , , , , , , , )	Put in#Fridge	a_sc1|pie.fuck.inspected.fridge									
+								x	Choice // ( Label, Event, , , , , , , , )	Reconsider...	a_sc1|pie.choices									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|pie.fuck.inspected.fridge	pie.fuck.inspected.fridge	exit		^	* You place the pie in the fridge briefly, attempting to cool it off.														
+					^	* A few moments go by...														
+					^	* You hear a muffled cry briefly coming from the fridge.														
+					^	* ...														
+					^	* You pull the pie out.														
+					^	* It seems you have murdered a magical pie.														
+					^	* D... Do you still want to fuck it?!		x												
+								x	Choice // ( Label, Event, , , , , , , , )	YES!#ME FUCKEY!	a_sc1|pie.fridge.fuck									
+								x	Choice // ( Label, Event, , , , , , , , )	Leave Pie#Alone	a_sc1|pie.fridge.leave									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|pie.fridge.fuck	pie.fridge.fuck	pie	pieidle	^	* Spurred on by your recent pastricide you make your move.			Points	-50										
+					^	* Way to go.														
+																				
+																				
+																				
+																				
+					^	* You are fucking a dead magical pie.														
+					^	* You pound every dead flakey crumb into a dessicated paste.														
+					^	* Pwoo Pwoo														
+					^	* Those are like, celebration noises I guess.														
+					^	* I ain't drawing that shit but you're doing it, trust me.														
+					^	* We done now?														
+									Choice // ( Label, Event, , , , , , , , )	Yes...	a_sc1|pie.fridge.fuck.done									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|pie.fridge.fuck.done	pie.fridge.fuck.done			^	* While attempting to dispose of the pie you trip.														
+					^	* Oops! You knucklehead, you dropped the pie!														
+			exit		^															
+									Events	pie.floor	1									
+									Events	pie.alive	0									
+																				
+							a_sc1|end													
+																				
+																				
+																				
+	a_sc1|pie.fridge.leave	pie.fridge.leave	exit		^	* Fucking whoops.			Events	pie.alive	0									
+					^	* You dropped the pie while trying to place it back.			Events	pie.floor	1									
+									Points	-10										
+							a_sc1|end													
+																				
+	a_sc1|pie.inspect	pie.inspect	pie	pieidle	^	* It's a Bscotch pie. 														
+					^	* It is VERY hot.														
+					^	* You should probably leave it alone.			Events	pie.inspected	1									
+							a_sc1|pie.choices													
+																				
+	a_sc1|pie.fuck.condom	pie.fuck.condom						x												
+					>	* You gingerly slip the condom onto your dick.														
+					>	* It seems to keep your dick nice and cool.														
+					>	* Mentholated!														
+					>	* As you approach the Pie with your carnal intents it comes to life!														
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	gameMusic									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-.15										
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	musicfade	pieMusicLoop	6								
+																				
+			pie	pieshy	^	H... Hello?!														
+					>	* The pie speaks but your resolve to fuck a pie is set in stone.														
+								x	Choice // ( Label, Event, , , , , , , , )	Finger Pie	a_sc1|pie.fuck.condom.finger									
+								x	Choice // ( Label, Event, , , , , , , , )	Fuck Pie	a_sc1|pie.fuck.condom.blowjob									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|pie.fuck.condom.finger	pie.fuck.condom.finger	pie	piefinger	^	Mmmffh			Points	10										
+					>	* You spread the pie's flakey crust and begin massaging its gooey insides														
+					^	Ahnn.														
+					>	* The pie moans as you continue to probe deep inside its trembling filling.														
+					^	Unf... AAAAhhnnn *shudder*														
+					>	* You believe you've given her a piegasm.														
+					>	* You lick the filling off your fingers. Yum!														
+					>	You press your dick up against her lips.														
+																				
+																				
+	a_sc1|pie.fuck.condom.blowjob	pie.fuck.condom.blowjob	pie	pieprebj	^	* She gives you an embarrassed look.			Points	40										
+			pie	piebj	^	* You grab the pie plate by the sides														
+					>	...and methodically ram your cock inside of her.														
+					>	* Each thrust you feel your dick surrounded in pie goo.														
+					^	* Your dick kissing the pie plate with each thrust.														
+			pie	piebjhard	^	* Pie filling ooozes out of her mouth as you get close to ejaculating.														
+	a_sc1|pie.fuck.condom.facial	pie.fuck.condom.facial	pie	piecum	^	* Her eyes go blank as you pull off your condom and unload all over her face.			Unlocked											
+					>	* As you come down from your excitment you realize what you've done.														
+					>	* The pie looks at you longingly, wanting more.														
+					>	* You put the pie back on the counter in disgust.														
+					>	* You don't think you respect yourself or the pie enough to ever interact with it again.														
+			exit		^															
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	pieMusicLoop									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-.15										
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	music	gameMusic									
+					>	* You're left with one last problem...														
+								x	Choice // ( Label, Event, , , , , , , , )	Throw out#condom.	a_sc1|pie.fuck.condom.remove									
+								x	Choice // ( Label, Event, , , , , , , , )	Rinse and#keep condom	a_sc1|pie.fuck.condom.keep									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|pie.fuck.condom.remove	pie.fuck.condom.remove			>	* You chuck the condom behind the oven.			Points	-5										
+					>	* Hopefully it's never found again...														
+									RemoveItem	1										
+									Events	pie.fucked	1									
+									Events	pie.facial	1									
+							a_sc1|end													
+	a_sc1|pie.fuck.condom.keep	pie.fuck.condom.keep			>	* You shuffle over to the sink, shorts around your legs.			Points	5										
+					>	* You squeeze out your liquid disgrace into the sink.														
+					>	* You pocket the condom.														
+									Events	pie.facial	1									
+									Events	pie.fucked	1									
+							a_sc1|end													
+																				
+																				
+																				
+									Events	pie.inspected	1									
+							a_sc1|pie.choices													
+																				
+																				
+	a_sc1|pie.eat	pie.eat	pie	eat //pie	^	* You attempt to take a bite.			Points	-20										
+					^	* ouch *														
+					^	* You burn your lips and gums on the pie crumbs.														
+					^	* You are left with the bitter taste of Bscotch and ... tears?														
+									Events	pie.alive	0									
+									Events	pie.floor	1									
+			exit				a_sc1|end	x	Events											
+																				
+	a_sc1|pie.dead	pie.dead						x	HideUI											
+			pie	eat //pie	^	* You don't dare burn your mouth again...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+							a_sc1|end													
+	a_sc1|pie.shame	pie.shame						x	HideUI											
+					>	* The shame is too great.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					>	* You can't bring yourself to look at the pie ever again.														
+							a_sc1|end													
+																				
+																				
+	a_sc1|pie.end	pie.end					END	x	ShowUI											
+																				
+	a_sc1|basementhallway	basementhallway						x	HideUI											
+			tori	talkshocked	<	What did I tell you?!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+			tori	talkangry	<	Go Back. NOW.														
+									GoToRoom	rmFoyer										
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-2										
+							a_sc1|end													
+																				
+	a_sc1|toriel.livingroom	toriel.livingroom						x	HideUI											  
+			tori	sitting	<	Take care of yourself sweetie.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+								x	ShowUI											
+							a_sc1|end													
+																				
+	a_sc1|sleep.toriel	sleep.toriel					a_sc1|sleep.toriel.1	x												
+	a_sc1|guestbed.wakeup	guestbed.wakeup						x	HideUI											
+									Transition //(type(1 in,-1 out,0 both), speed(second+), delay(second+), color)	-1	1	0.5	black							
+									Blank // ( Color, , , , , , , , , )	black										
+	a_sc1|guestbed.wakeup.nofrills	guestbed.wakeup.nofrills																		
+																				
+																				
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	gameMusic									
+					>	* Exhausted, you fall into a deep sleep...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					>	* ZZZ *														
+					>	* ZZZ *														
+					>	* ZZZ Snort *														
+					>	* You are awoken by the sound of birds chirping.														
+																				
+								x	Blank // ( Color, , , , , , , , , )	exit										
+								x	Transition //(type(1 in,-1 out,0 both), speed(second+), delay(second+), color)	1	1	0.5	black							
+					>	* Is it morning?														
+					>	* Your morning wood is harder than usual.														
+					>	* Tori's hot body has really worked you up...														
+					>	* You whip out your dick.														
+					>	* You begin to pull your cock back and forth slowly.														
+					>	* ...imagining her massive tits around it.														
+					>	* Picking up the pace, thinking back to her wide birthing hips.														
+					>	* You're so close to-														
+					>	* Wait, you hear something outside the room. 														
+					>	* Oh shit! Tori's gonna step in!														
+					>	* You're seconds to climaxing and you only have so little time to act.														
+																				
+																				
+																				
+																				
+																				
+																				
+					>	* Think. Think!														
+								x	Choice // ( Label, Event, , , , , , , , )	Finish#anyways.	a_sc1|guestbed.finish									
+								x	Choice // ( Label, Event, , , , , , , , )	Hide behind#the covers.	a_sc1|guestbed.hide									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|guestbed.finish	guestbed.finish																		
+					>	* Actually, you get a sinister idea.			Points	-20										
+					>	* As soon as Tori steps inside the room, with a pie slice at hand…														
+					>	* You point your dick at her and shoot three bursts of semen at her!														
+					>	* The sticky substance lands right on her mid-section and between her chest.														
+								x	Blank // ( Color, , , , , , , , , )	exit										
+								x	Transition //(type(1 in,-1 out,0 both), speed(second+), delay(second+), color)	1	0.1	0	black							
+			tori	talkhappy	<	Sorry to bother I just came to --			Events	tori.facial	1									
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	fx	fx5									
+			tori	talkcummed	<	o-oH M-MY GOD!														
+					<	* Stunned at first, she drops the pie slice and just looks at you.			Events	pie.placed	1									
+					<	* Her face turns bright red and leaves the scene without a word.														
+			exit						Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-0.5										
+									AdvancePlot											
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	gameMusic									
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	music	gameMusic									
+							a_sc1|end													
+																				
+																				
+	a_sc1|guestbed.hide	guestbed.hide			>	* You move lightning-fast to cover your lower-half with the sheets.			Points	10										
+					>	*You feel the sweet release and cum on the bed sheets.														
+																				
+																				
+			tori	talkworry	<	Oh, did you just wake up?														
+				talkworry	<	I didn't mean to disturb you, but here's a slice of the pie.			Events	pie.placed	1									
+					<	I'll leave it next to you if you ever get hungry.														
+			exit		>	* She gives you a kiss on the forehand and leaves.														
+					>	* Thank god the bedsheets are thick. The cum stains didn't bleed through.														
+																				
+					>	* But, it did leave a mess, gross. You better leave the bed.														
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	gameMusic									
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	music	gameMusic									
+																				
+						exit			AdvancePlot											
+							a_sc1|end													
+																				
+																				
+	a_sc1|sleep.toriel.1	sleep.toriel.1						x	HideUI											
+									Transition //(type(1 in,-1 out,0 both), speed(second+), delay(second+), color)	-1	1	0.5	black							
+									Blank // ( Color, , , , , , , , , )	black										
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-1										
+					>	* You wake up hearing odd squelching sounds.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					>	* The sound is coming from Tori's room.														
+								x	Choice // ( Label, Event, , , , , , , , )	Investigate	a_sc1|sleep.toriel.investigate									
+								x	Choice // ( Label, Event, , , , , , , , )	Go Back#to Sleep.	a_sc1|sleep.toriel.gotosleep									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|sleep.toriel.investigate	sleep.toriel.investigate			>	* You decide to see what Tori is up to...														
+								x												
+								x	GoToRoom	rmMasterBedroom										
+							END													
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-0.5										
+																				
+	a_sc1|sleep.toriel.gotosleep	sleep.toriel.gotosleep			>	* You decide to not intrude...			Points	10										
+					>	* ... and fall asleep...														
+								x												
+									AdvancePlot											
+							a_sc1|guestbed.wakeup.nofrills													
+																				
+																				
+																				
+													black							
+																				
+																				
+	a_sc1|toriel.masturbating	toriel.masturbating	torifap	fap0	^			x	HideUI											
+								x												
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	gameMusic									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-.15										
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	music	sexMusic	6								
+					>	* You sneak a peek inside her room.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+			torifap	fap1	^	* Ahnn...A-A... gnnn...														
+					>	* (holy shit.)														
+					>	* You whisper to your self,														
+					>	* Tori is just going to town on her pussy.														
+			torifap	fap2 // TORIFAP	^	Fuck me.... Fuck! Nnh.. Mmmm...														
+					>	* You continue to watch while reaching down to your cock.														
+					>	* Tori continues to pound her pussy with her dildo.														
+					^	Oh fuck...														
+					^	* She bleats out.														
+					^	So close!														
+					>	* You are now furiously masturbating.														
+					^	* Tori cums.														
+			torifap	fap3//torifap	^	NYAaahhh!!!			Unlocked											
+								x	Choice // ( Label, Event, , , , , , , , )	Cum with#Tori.	a_sc1|toriel.masturbating.cum									
+								x	Choice // ( Label, Event, , , , , , , , )	Stop jerking#off.	a_sc1|toriel.masturbating.nocum									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+																				
+																				
+																				
+																				
+																				
+	a_sc1|toriel.masturbating.cum	toriel.masturbating.cum			>	* You cum with significantly less sexyness.			Points	-30										
+					>	Nyeeeargg...														
+					>	* You cum in unison with Tori.			Events	cumsplat.flag	1									
+					>	* Warm clumps of jizz pile up against the wall beside her door.			Events	cumsplat	1									
+	a_sc1|toriel.masturbating.nocum	toriel.masturbating.nocum			>	* You sneak away in to the shadows as if nothing had happened.			Points	10										
+			exit		^	exit		x												
+								x												
+								x												
+								x	Events	cumsplat.flag	1									
+								x	GoToRoom	rmGuestBedroom										
+								x	Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	sexMusic									
+								x	Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-.15										
+								x												
+							a_sc1|end	x												
+																				
+																				
+																				
+						// Show Toriel things														
+	a_sc1|show.toriel.condom	show.toriel.condom						x												
+			tori	sitting	<	Looks like an XXL size.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	You sure you'll fit into that?														
+					<	* Tori chuckles.														
+					>	You pocket the condom and slink away bashfully.														
+							a_sc1|end													
+	a_sc1|show.toriel.sock	show.toriel.sock						x												
+			tori	sitting	<	Oh, a sock. How exciting!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	It doesn't belong to you does it?														
+					<	It seems vaguely familiar...														
+					<	Where did you find it?														
+					>	* Before you can respond Tori interupts you.														
+					<	No matter! You seem good at finding things maybe you can help me track down my...														
+					<	* She stops briefly to think.														
+					<	Earrings! Yes.														
+					<	Now where was I when I was using them last...														
+					<	* Tori taps her muzzle absent mindedly.														
+					<	OH! Yes.														
+					<	I do remember walking to my room late the other night.														
+					<	But if they fell I would have heard them...														
+					<	Something must have cushioned their fall or I would have surely heard them hit the ground.														
+					<	Sorry! That's the best I can remember.														
+																				
+																				
+							a_sc1|end													
+	a_sc1|show.toriel.clamps	show.toriel.clamps						x												
+			tori	sitting	<	* Tori gives you a sly look and feigns ignorance.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	What are these... Some kind of device?														
+							a_sc1|end													
+	a_sc1|show.toriel.dildo	show.toriel.dildo																		
+			tori	sitting	<	Where did you get this?!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	*She pauses and fiddles with her book nervously.														
+					<	You weren't poking in my room, were you?!														
+					<	A-ah, of course not... I trust you.														
+					<	...I must have kept that out somewhere on accident...														
+					<	Thank you for finding it.														
+					<	* Tori reaches out and takes the dildo.			Points	20										
+									RemoveItem	3										
+							a_sc1|end													
+																				
+	a_sc1|show.toriel.condomsock	show.toriel.condomsock						x												
+			tori	sitting	<	* Tori raises an eyebrow, eyeing the... thing you're holding.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	You are one sad boy.			Points	30										
+					<	* Tori pauses for a moment.			Unlocked											
+					<	...														
+					<	Maybe... We should take care of this problem.														
+					>	OH!!! * You mumble.														
+					<	* Tori grabs your cock.														
+			exit		<			x												
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	gameMusic									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-1										
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	music	sexMusic									
+			torisex19_22	sc21	^	* She unzips your pants and pulls our your dick, holy fuck!														
+					^	*Tori's breasts pop out of her top and engulf your erection.														
+					^	* The supple texture of her velvety tits drives you up the wall.														
+					^	* You have no idea how long you will last, but it ain't long.														
+					^	Ohh, you really like that hmm?														
+			torisex5_8	sc8	^	* Tori licks her lips and plunges down on your dick with her mouth.														
+					^	UNggf!														
+					^	* Oh shit did I just make that sound...														
+					^	Shlurp Slurp, Mmh~ 														
+			torisex15_18	sc18	^	* Tori continues to work your shaft with her mouth.														
+					^	* You feel a huge load germinating in your cum spheroids.														
+					^	* You buck your turgid flesh slug into her toothy pleasure gulch.														
+			torisex15_18	sc18_a	^	* Finally unloading huge ropey clusters of baby batter all over her fuzzy face.														
+					^	* If you weren't a furry before. You are now.														
+					^	* Tori smiles as you pant breathlessly.														
+					^	All good now?														
+					^	* You barely murmur a response.														
+					^	* She pulls out a tiny comb from her pocket and begins to comb the cum out of her hair														
+					^	* Each stroke seems to matte the cum deaper into her fur.														
+					^	* You ... Start to gag at how this pleasant experience becomes some sort of.														
+					^	* Cum play furry freak show...														
+					^	OKAY! TIME FOR ME TO SEE YOU LATER.														
+					^	* You wave to her as she attempts to poorly pull the ropey jizz out of her fur.														
+					^	Absent mindedly you left the condom sock with Tori but you're too grossed out to ask.														
+									RemoveItem	5										
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	stop	sexMusic									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-.15										
+									Sound // ((music,ambient,fx,stop), name,volume (1,10))	music	gameMusic									
+							a_sc1|end													
+																				
+	a_sc1|floorpie.alive	floorpie.alive						x	HideUI											
+			pie	pieslicenormal//pie	^	How lovely she left me a floor pie.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					^	* You take a small bite.														
+					^	* You are filled with P-I-E.														
+							a_sc1|end													
+																				
+	a_sc1|floorpie.dead	floorpie.dead						x	HideUI											
+			pie	pieslicedead//pie	^	OH GOD JEESUS!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					^	* You throw the pie to the ground out of terror.														
+							a_sc1|end													
+																				
+	a_sc1|floorpie.dropped	floorpie.dropped						x	HideUI											
+			pie	pieslicebroken//pie	^	Jeez. Thanks Tori...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					^	* You put the pie back on the floor.														
+							a_sc1|end													
+	a_sc1|floorpie.alive.fucked	floorpie.alive.fucked						x	HideUI											
+			pie	pieslicenormal//pie	^	How lovely she left me a floor pie.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					^	* It seems to have an extra layer of glazing														
+					^	It's a...Cream Pie...														
+					^		a_sc1|end													
+																				
+	a_sc1|talk.toriel	talk.toriel						x	HideUI											
+			tori	sitting	<	What can I do for you child?			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+						exit		x												
+	a_sc1|talk.toriel.choices	talk.toriel.choices						x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Where am I?	a_sc1|talk.toriel.where	tori.ask.where	0							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Um when#can I leave?	a_sc1|talk.toriel.when	tori.ask.when	0							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Who are you?	a_sc1|talk.toriel.who	tori.ask.who	0							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	What#are you..?	a_sc1|talk.toriel.what	tori.ask.what	0							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Why am#I here?	a_sc1|talk.toriel.why	tori.ask.why	0							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Leave	a_sc1|talk.toriel.leave									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|talk.toriel.leave	talk.toriel.leave	exit			exit		x												
+							a_sc1|end	x												
+																				
+	a_sc1|talk.toriel.butt	talk.toriel.butt			<	I don't think so you cheeky snot.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+						exit														
+							a_sc1|talk.toriel.choices													
+	a_sc1|talk.toriel.where	talk.toriel.where			<	This is my home.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	You're welcome to stay as long as you'd like.			Events	tori.ask.where	1									
+						exit														
+							a_sc1|talk.toriel.choices													
+	a_sc1|talk.toriel.when	talk.toriel.when			<	Oh… you should fully recover first.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	It's not good to travel these caves when fatigued.			Events	tori.ask.when	1									
+					>	* You get a sense she won't let you leave so easily...														
+					>	* You feel trapped.														
+						exit														
+							a_sc1|talk.toriel.choices													
+	a_sc1|talk.toriel.who	talk.toriel.who			<	My name is Tori.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	I heard a loud sound earlier and came to investigate.			Events	tori.ask.who	1									
+					<	That's when I found you there on the cave floor!														
+					<	Every now and then various creatures fall down here.														
+					<	I like to try and help if I can.														
+					<	Hopefully you're enjoying your stay so far.														
+						exit														
+							a_sc1|talk.toriel.choices													
+	a_sc1|talk.toriel.what	talk.toriel.what			<	Well aren't you rude.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	What are you, a weird flesh creature?			Events	tori.ask.what	1									
+					<	* hmph!														
+						exit														
+							a_sc1|talk.toriel.choices													
+	a_sc1|talk.toriel.why	talk.toriel.why			<	Well little human, you need to recover!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	You had a pretty nasty fall out there.			Events	tori.ask.why	1									
+					<	There are too many bad things in the cave.														
+					<	But don't worry, momma Tori is here.														
+					<	To keep you safe,														
+					<	Under my wing,														
+					<	For a good long time.														
+						exit														
+							a_sc1|talk.toriel.choices													
+																				
+																				
+	a_sc1|sockfuck	sockfuck						x	HideUI											
+					>	* You fuck a sock.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+	a_sc1|final	final						x	HideUI											
+								x												
+			tori	sc1 // tori	<	So you decided to come down here after all.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					<	I knew you couldn't resist the temptation.														
+					^	* Something about Tori seems different...														
+					<	It was only a matter of time before you disobeyed me!														
+					>	* You feel a knot form in your throat.														
+					>	* ...you're also strangely aroused by her stern temperment.														
+					<	I've been waiting.														
+					<	* She eyes you darkly.														
+					<	...And I've been watching.														
+					<	There is no escape.														
+																				
+					<	So, little human...														
+			tori	sc1_paddle	<	* Tori picks up one of her paddles.														
+					<	Did I invite a pervert into my house?														
+					<	* She taps it teasingly against your thigh.														
+					>	* Gulp!														
+					<	It's ok to be scared, my child.														
+					<	I won't let these transgressions slide easily.														
+					<	* She begins her punishment!														
+																				
+						* SLAP *	slapfx	call	Shake // (ammount, target)	8										
+					<															
+					<	This is for entering my forbidden basement!														
+	a_sc1|pie.fucked	pie.fucked							If // (variable, (tru,false,<,>,=,!), variable, next event)	pie.fucked	FALSE		a_sc1|pie.bit							
+																				
+					<	You FUCKED my pie!														
+							slapfx	call	Shake // (ammount, target)	10										
+					<	* SLAP *														
+	a_sc1|pie.bit	pie.bit							If // (variable, (tru,false,<,>,=,!), variable, next event)	pie.alive	TRUE		a_sc1|pie.dropped							
+																				
+					<	You bit my pie.														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	10										
+					<															
+	a_sc1|pie.dropped	pie.dropped							If // (variable, (tru,false,<,>,=,!), variable, next event)	pie.floor	FALSE		a_sc1|sock.fucked							
+																				
+					<	You dropped my pie!														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	10										
+					<															
+	a_sc1|sock.fucked	sock.fucked							If // (variable, (tru,false,<,>,=,!), variable, next event)	condomsock.fucked	FALSE		a_sc1|tori.peep							
+																				
+					<	You fucked a goddamn sock!														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	10										
+					<															
+																				
+	a_sc1|tori.peep	tori.peep							If // (variable, (tru,false,<,>,=,!), variable, next event)	cumsplat	FALSE		a_sc1|tori.facial							
+																				
+					<	You watched me jack off.														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	10										
+					<															
+	a_sc1|tori.facial	tori.facial							If // (variable, (tru,false,<,>,=,!), variable, next event)	tori.facial	FALSE		a_sc1|tori.roomenter							
+																				
+					<	You came on my face!														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	10										
+					<															
+	a_sc1|tori.roomenter	tori.roomenter							If // (variable, (tru,false,<,>,=,!), variable, next event)	tori.roomenter	FALSE		a_sc1|wall.cum							
+																				
+					<	You went into my room.														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	10										
+					<															
+	a_sc1|wall.cum	wall.cum							If // (variable, (tru,false,<,>,=,!), variable, next event)	cumsplat	FALSE		a_sc1|slaps.over							
+																				
+					<	You came on my wall.														
+						* SLAP *	slapfx	call	Shake // (ammount, target)	26										
+					<															
+	a_sc1|slaps.over	slaps.over																		
+																				
+					>	* Your ass aches from the slaps.														
+					>	* And your dick throbs from the excitement....														
+					>	* What will she do next...?!														
+					<	Oh, wow.														
+					<	* Tori taps the bulge in your pants with the tip of her paddle.														
+					<	Aren't you a little perv!!														
+					<	Your dick is so hard from that paddling!														
+					<	This won't do.														
+			tori	sc1//tori	<	* She sets the paddle down.														
+									If // (variable, (true,false,<,>,=,!), variable, next event, failed event)	got.dildo	FALSE		a_sc1|tori.explainyourself							
+			tori	sc2// tori back	<	* Tori notices the bulge in your pants and grabs for it.			Unlocked											
+			tori	sc1_dildo	<	What's this? My favorite DILDO?!														
+					<	Stealing dildos is a serious offense around here kiddo.														
+																				
+																				
+					>	* She yanks your pants down and spreads your ass cheeks.														
+					>	W-Woah lady, what!!?														
+					>	* Your cheeks are still sore form the paddling...														
+					^	* Tori licks her finger and gently fingers your asshole.														
+					^	* Your cheeks twitch in surprise.														
+					^	You took this from me… 														
+					^	I'm guessing you wanted to try it out?														
+					<	* Tori lubes up the dildo and presses it against your asshole.														
+					^	How does this feel, little pet?														
+					>	Mpph!														
+					^	* The dildo pops into your butt.			Shake // (ammount, target)	5										
+			exit		<															
+			torisex19_22	sc19// Butt dildo	^															
+					^	* Your ass is on fire!!														
+					>	W-wait...														
+					^	* Tori gives you little time to adjust to this feeling.														
+					^	* She starts working the dildo in and out of you...			Shake // (ammount, target)	5										
+					>	Nnhhh...														
+					^	* You moan with a mixture of discomfort and pleasure.			Shake // (ammount, target)	5										
+					^	* She's hitting all the right spots... your ass twitches with pleasure.														
+					^	* Tori rhythmically rams the dildo into you.			Shake // (ammount, target)	5										
+					^	You were a naughty little boy.														
+					^	* Tori coos mischeivously as you wriggle under her control.														
+					^	* Right as you're about to erupt...														
+					>	Ahhn...!!														
+					^	* She stops!														
+					^	Tsk tsk, no rewards for bad little pets.														
+					^	* You groan in discomfort as she smiles at you.														
+																				
+			torisex15_18	sc16//pink butthole look over	^	* Tori turns around meekly to show you her pink butthole.														
+					>	* But you know it's all a ruse.														
+					>	* This she-beast has no shame...														
+			torisex9_14	sc13//grab cheeks	^	We can't have you running away, now can we?														
+					>	Mph!														
+					^	* Her fluffy buns pomf on your face.														
+			torisex15_18	sc15//pink butthole	^	Pucker up and give mama a kiss.			Shake // (ammount, target)	8										
+					^	* She wriggles her ass and lips against you.														
+					>	* Holy moly!														
+					>	* She suffocates you with her pink butthole as she plants a giant smooch on your lips.														
+					>	* Your lips entirely engulfed by her puckering butthole.														
+					>	* You have no control.														
+					>	* Though you struggle for breath, you feel...														
+					>	* ...A sense of exhilaration.														
+					>	* Tori lifts her ass to give you a brief gasp of air.														
+					^	before slapping it back down over you.														
+					^	My my, look how hard this is making you...														
+					^	Is there no sick fetish that doesn't excite you, human?														
+			torisex9_14	sc14//legs spread smirking	^	* She lifts up briefly and positions herself on her back.														
+					^	Now let's begin your training as my lap dog.														
+																				
+																				
+					^	*Tori forces your head between her legs.														
+					^	Let's see how well you can service me, pet.														
+					^	* Before you have a chance to talk, she shoves you into her pussy lips.														
+					^	* The folds of her massive snatch engulf you.														
+					^	* The outer lips are warm and soft, with a gentle layer of fluff.														
+					^	* Her pussy drips with moisture.														
+					^	* You quickly lap up the sweet nectar.														
+					^	* Tori moans with pleasure as your tongue works her into a state of euphoria.														
+					^	* You finally feel somewhat in control...														
+					^	Mmmhh... yes....														
+			torisex9_14	sc11//ass wiggle 2	^	* She positions herself to give you even better access.														
+					^	* You flick at her clitoris with your tongue.														
+					^	* She bites her lower lip and moans.														
+					^	* You lightly suck on her clit.														
+					^	* Continuously...														
+					^	* Tori's hips gyrate in motion with your licking and sucking.														
+			torisex5_8	sc7//spread pussy on back	^	* You can feel her thighs shake and quiver against your cheeks.														
+					^	Anggghh... 														
+					^	* Tori is lost momentarily in pleasure waves.														
+						* Her warm orgasm splashes you in the face.														
+						* cough! cough! ...														
+					^	* Hmm "Pleasure Waves" A good name for a Smooth Jazz band.														
+					^	* You regain your composure. While Tori does the same.														
+			exit		^															
+	a_sc1|tori.explainyourself	tori.explainyourself	tori	sc1 // tori	<	Well...														
+					<	* She clears her throat.														
+					<	Now that that's been settled.														
+					<	* Tori combs bits of ruffled fur down on her body.														
+					<	What do you have to say for yourself?														
+					>	* Though still stern looking, Tori seems a bit calmer.														
+						* She eyes you, waiting for a response.														
+						* For some reason you feel compelled to...														
+								x												
+	a_sc1|tori.explainyourself.options	tori.explainyourself.options						x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Show her#Earrings.	a_sc1|show.clamps	got.clamps	1							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Show #the Condom.	a_sc1|show.condom	got.condom	1							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Show #the Sock.	a_sc1|show.sock	got.sock	1							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Show#Condom Sock.	a_sc1|show.condomsock	got.condomsock	1							
+								x	ChoiceIf // ( Label, Event, Flag, Condition (0/1), , , , , , )	Apologize...#I'm sorry.	a_sc1|tori.final									
+								x												
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+																				
+	a_sc1|show.clamps	show.clamps	tori	sc1_clamps	<	Oh. Earrings?			Points	30										
+					<	These aren't earrings, stupid.														
+					<	I'll show you how these babies are worn.														
+					>	* Woah, this lady is crazy.														
+					>	* Is she already going in for round 2?!														
+			exit		<															
+			torisex19_22	sc22// piecing add	^	* She puts the clamps on her giant nips.			RemoveItem	4										
+					<	Is this what you wanted, you freak?														
+					<	I'll show you how freaky I can get, too!														
+			torisex19_22	sc20// Choke her	^	* Tori forces your hands around her throat!														
+					^	* She makes you grasp her tightly.														
+					<	I'm sure there's some frustrations you want to relieve?														
+					^	* She taunts you.														
+					^	* You feel an urge swelling within yourself.														
+					^	* Suddenly you realize Tori is no longer pressuring your hand.														
+					^	* You choke the bitch!!														
+					<	Teehee~														
+					^	* As you choke her, she smiles and gurgles a laugh.														
+					<	Is that the best you can do, human?														
+					^	* You wrap your hands tighter around her fluffy throat.														
+					^	* After a moment of ecstacy...														
+					^	* ... She shoves you away.														
+					<	You bore me, child.														
+					^	* Tori pushes you over and presents her pussy to you.														
+																				
+			torisex5_8	sc5// clamp fuck	^	* After the attempted strangling humiliation, you ram your dick inside of her.														
+					>	Take this you freaky goat bitch!!														
+					^	* Tori moans with pleasure.														
+					^	* Her giant tits flop around as you pound her harder and harder.														
+					^	* The nipple clamps slap against her titties.														
+					<	Yes my child, yes!! YES!!														
+					^	* Her pussy is so tight around your throbbing cock...														
+					<	Ahhn... ahhh...														
+					^	* You both moan and pant in unison.														
+					^	* Her pussy tightens and quivers against you.														
+					^	* Moments before you cum she grabs your cock firmly at the base.														
+			exit		^															
+			tori	sc2// tori back	<	Nu-Un! Not yet.														
+					^	* Your cock struggles to cum but the firm grasp prevents you from doing so.														
+					<	We aren't done yet honey bunny.			Unlocked											
+							a_sc1|tori.explainyourself.options													
+																				
+																				
+																				
+																				
+	a_sc1|show.condom	show.condom	tori	sc1_condom	<	* She grabs the condom from you			RemoveItem	1										
+			tori	sc1//tori	<	No need for this!			Points	5										
+						* She presses the opening against her lips.														
+						* And blows it into a huge balloon.														
+						* Tori kicks the balloon condom into a corner.														
+						* You feel dejected...														
+							a_sc1|tori.explainyourself.options													
+																				
+																				
+	a_sc1|show.sock	show.sock	tori	sc1_sock	<	UGH!			RemoveItem	2										
+					<	This filthy thing.			Points	15										
+					<	How about we shove this in here.			Unlocked											
+					<	* She balls up the sock and rams in your mouth.														
+					>	GUHhmPH!														
+					<	Maybe... a flithy dance for a filthy boy.														
+					<	* Tori smirks.														
+			exit		<															
+			torisex9_14	sc11//ass wiggle 2	^	* Tori hums while swaying her hips back and forth.														
+					^	Hmm doot doot dooo.														
+			torisex9_14	sc10//ass wiggle 1	^	Pah!			Shake // (ammount, target)	8										
+			torisex9_14	sc11//ass wiggle 2	^															
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	-1										
+			torisex9_14	sc10//ass wiggle 1	^	Pah! 			Shake // (ammount, target)	12										
+			tori	sc3// tori front tongue	^	You like that you little pervert don't yah.														
+								x	Choice // ( Label, Event, , , , , , , , )	MHPHMM	a_sc1|show.sock.options									
+								x	Choice // ( Label, Event, , , , , , , , )	UMFHMMM	a_sc1|show.sock.options									
+								x	Choice // ( Label, Event, , , , , , , , )	WAFHAWAPH	a_sc1|show.sock.options									
+								x	Choice // ( Label, Event, , , , , , , , )	MUMUMFFLRTT!	a_sc1|show.sock.options									
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+	a_sc1|show.sock.options	show.sock.options			^	Uh huh sounds lovely.														
+					^	* Tori murmurs absentmindedly and continues to dance.														
+			torisex9_14	sc11//ass wiggle 2	^	Dah dat -														
+			torisex9_14	sc10//ass wiggle 1	^	DAH!			Shake // (ammount, target)	10										
+					^	Dah doo														
+			torisex9_14	sc11//ass wiggle 2	^	Doot														
+			torisex15_18	sc15//pink butthole	^	DOO!			Shake // (ammount, target)	20										
+								x	Sound // ((music,ambient,fx,stop), name,volume (1,10))	fx	fart	10								
+					^	* She toots... 														
+			exit		^															
+			tori	sc4// tori shocked	<	Ah...														
+					^	* ...and decides to stop.														
+			tori	sc1//tori	<	A-alright we're done with that...														
+																				
+																				
+																				
+																				
+							a_sc1|tori.explainyourself.options													
+																				
+																				
+	a_sc1|show.condomsock	show.condomsock	tori	sc1_sock	<	UGH!			RemoveItem	5										
+					<	This filthy thing.														
+					<	This is the saddest thing i've ever seen honestly...														
+			tori	sc1//tori	<	* She tosses it in the corner.														
+					<	I'll have you clean that up later once I have you in my pet gimp suit...			Points	10										
+					<	Oops i've said too much!														
+							a_sc1|tori.explainyourself.options													
+																				
+																				
+	a_sc1|tori.final	tori.final				* You grovel at Tori's feet.														
+						I'm so sorry! Please take pity on me!														
+			tori	sc1//tori	<	* Tori grins....														
+			tori	sc4// tori shocked	<	Oh my, what a sad boy. You look like you are about to burst.			Points	10										
+			tori	sc3// tori front tongue	<	Let momma take care of that for you.			Unlocked											
+			exit		<															
+																				
+																				
+			torisex9_14	sc13//grab cheeks	^	* Tori turns around rather unceremoniously.														
+						* Spreading her ass in your direction.														
+					^	Come now give mommy a kiss with that little hardon.														
+			torisex15_18	sc15//pink butthole	^	* Tori pushes her asshole agains the tip of your cock.														
+					^	* Your penis aches like the legs of an escaped convict.														
+					^	* Er...														
+					^	* Your loins thirst for the sweet..														
+					^	* nect...														
+					^	* uh...														
+					^	* Your penis gets like super hard okay.														
+			torisex5_8	sc55// anal	^	She pushes back and your cock plunges right into her puckering asshole.														
+					^	* She yelps in glee!														
+					^	OOH!														
+					^	You ARE a big boy after all.														
+					^	* Your cock stirs up her insides as her asshole crushes the ever loving christ out of your cock.														
+					^	FFFUUuuuuccckkk.														
+					^	Language dear!														
+					^	* Tori's motherly insticts seem to overide her briefly.														
+					^	Ugh stretch that fucker out you-														
+					^	PIECE...			Shake // (ammount, target)	5										
+					^	...OF...			Shake // (ammount, target)	10										
+					^	SHIT.			Shake // (ammount, target)	10										
+					^	* Before succumbing to some primal ass dirty talk.														
+					^	* You can feel her ass flex against your shaft.														
+					^	* Warm liquid squirts out of her pussy.														
+					<	NYAAahhn!!														
+					>	* damn this bitch just orgasmed from anal...														
+					>	* ...AWESOME!														
+			torisex15_18	sc17// Spread Leg Hover	^	* Hovering over you, having just cum from the pounding you gave her asshole.														
+					^	* She smirks briefly.														
+					^	* Now for the main event.														
+			torisex5_8	sc6//steady cowboy	^	* Toriel sits down over you and immediately straddles your still wet cock.														
+					^	* You slip inside of her soaking wet pussy.														
+					^	* She looks totally entranced in the moment...														
+					^	* Your cock doesn't get a break before she														
+					^	* Pounds			Shake // (ammount, target)	5										
+					^	* and														
+					^	* pounds			Shake // (ammount, target)	5										
+						* your poor cock into oblivion!														
+						* She slaps mercilessly against you, over and over.														
+						* Until she is fucking you mindlessly.														
+			torisex9_14	sc9//riding on top cumming	^	* Tori rides you like an animal.														
+					^	* Her tongue lulls out of her mouth and flops around as she														
+					^	* rides you silly														
+					^	* and fucks you till you are both completely whiped.														
+					^	* You're getting close...!														
+					^	* Holy shit her slick tight pussy feels so good against your cock!														
+					^	* You're unsure how much longer you can hold out...														
+					^	* Your moans overlap with Tori's pants of pleasure.														
+					^	Fill me with your determination!														
+																				
+																				
+																				
+																				
+			exit		^															
+	a_sc1|theend	theend			<				ChangeHand	1										
+					<				Events	game.end	1									
+					<				GoToRoom	rmIntroText										
+							END													
+																				
+					<															
+									Pause // (Stop no controls -999sec to -1sec, Stop forever no controls 0, Stop with controls (default), Stop with controls 1sec to 999sec)	0										
+																				
+																				
+																				
+	a_sc1|condomsock.fucked	condomsock.fucked						x	HideUI											
+								x												
+					>	* You open the condom you found and take the one sock you found.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+					>	* First putting the condom on, then the sock on your penis...														
+					>	* You masturbate to preverted thoughts of your new step-mom.														
+					>	* Stroking your dick fast and hard you let out a load of cum and fill the tip of the condom.														
+					>	* You take the condom off and leave it inside the sock.														
+					>	* A little surprise from you to her.			Unlocked											
+									ChangeHand	5										
+							a_sc1|end													
+																				
+																				
+	a_sc1|get.condom	get.condom						x	HideUI											
+					>	* You uncover a condom...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+							a_sc1|end													
+																				
+	a_sc1|get.dildo	get.dildo						x	HideUI											
+					>	* Other than the large amount of dust bunnies, there's nothing of interest in here...			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+						....														
+						Wait, What the fuck!?														
+						Isn't this a.. Um… o-okay...														
+						* You uncover a Dildo.														
+							a_sc1|end													
+																				
+	a_sc1|get.sock	get.sock						x	HideUI											
+					>	* As you poke around inside a sock flops out.			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+							a_sc1|end													
+																				
+	a_sc1|get.clamps	get.clamps						x	HideUI											
+					>	* While snooping you come across... Nipple clamps?!			Dialogue // (Color(black,white),sprit(angel_textbox), enter(1,2), idle(1,2), exit(1,2))	white	sprTextBox									
+							a_sc1|end													
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+	slapfx								Sound // ((music,ambient,fx,stop), name,volume (1,10))	fx	slap									
+								return												
+	a_sc1|end							x	ShowUI											
+							END													
+																				
+																				
+				talkhappy																
+				talkangry		https://gyazo.com/31ce18fef5c76257ef499ed9460b3023														
+			pie	talkcummed																
+			tori	talklaugh																
+			torifap	talksly																
+			torisex5_8	talkshocked																
+			torisex9_14	talkworry																
+			torisex15_18	sitting																
+			torisex19_22																	
+				sc1//tori																
+				sc1_dildo																
+				sc1_clamps																
+				sc1_condom																
+				sc1_sock																
+				sc1_condomsock																
+				sc1_paddle																
+				sc2// tori back																
+				sc3// tori front tongue																
+				sc4// tori shocked																
+				sc5// clamp fuck																
+				sc55// anal																
+				sc6//steady cowboy																
+				sc7//spread pussy on back																
+				sc8//tit squeeze blowjob																
+				sc9//riding on top cumming																
+				sc10//ass wiggle 1																
+				sc11//ass wiggle 2																
+				sc12//spread legs with heart																
+				sc13//grab cheeks																
+				sc14//legs spread smirking																
+				sc15//pink butthole																
+				sc16//pink butthole look over																
+				sc17// Spread Leg Hover																
+				sc18// BJ end																
+				sc18_a// Bj End Facial																
+				sc19// Butt dildo																
+				sc20// Choke her																
+				sc21// bj start (breast squeeze)																
+				sc22// piecing add																
+																				
+				fap1																
+				fap2 // TORIFAP																
+				fap3//torifap																
+				fap0																
+				piebite																
+				piecum																
+				piefinger																
+				pieshy																
+				pieidle																
+				pieprebj																
+				piebj																
+				piebjhard																
+				pieslicenormal//pie																
+				pieslicebroken//pie																
+				pieslicedead//pie																
+																				
+																				
+			exit																	
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
